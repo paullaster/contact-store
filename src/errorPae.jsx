@@ -8,7 +8,9 @@ const errorPae = () => {
     <div className='error-page'>
         <h1>Ooops!</h1>
         <p>Sorry!, unexpected error has occurred.</p>
-        <p>error.statusText || error.message</p>
+        <p>
+            <i>{error.statusText || error.message}</i>
+        </p>
     </div>
   )
 }
