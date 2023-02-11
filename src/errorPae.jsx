@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouteError } from 'react-router-dom'
 
 const errorPae = () => {
-  const error = userouteError();  
+  const error = useRouteError();  
   return (
     <div>errorPae</div>
   )
