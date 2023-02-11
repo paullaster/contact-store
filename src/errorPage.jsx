@@ -5,7 +5,7 @@ const errorPae = () => {
   const error = useRouteError();  
   console.log(error)
   return (
-    <div className='error-page'>
+    <div id='error-page'>
         <h1>Ooops!</h1>
         <p>Sorry, unexpected error has occurred.</p>
         <p>
