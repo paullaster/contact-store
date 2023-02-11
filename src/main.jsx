@@ -6,6 +6,7 @@ import {
   RouterProvider
       } from 'react-router-dom'
 import Root from './routes/root'
+import errorPae from './errorPae'
 
 const router = createBrowserRouter([
   {
