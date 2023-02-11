@@ -3,8 +3,11 @@ import { useRouteError } from 'react-router-dom'
 
 const errorPae = () => {
   const error = useRouteError();  
+  console.log(error)
   return (
-    <div>errorPae</div>
+    <div className='error-page'>
+        
+    </div>
   )
 }
 
