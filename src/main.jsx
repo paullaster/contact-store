@@ -6,7 +6,7 @@ import {
   RouterProvider
       } from 'react-router-dom'
 import Root from './routes/root'
-import ErrorPage from './errorPae'
+import ErrorPage from './errorPage'
 
 const router = createBrowserRouter([
   {
