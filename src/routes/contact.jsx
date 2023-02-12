@@ -1,7 +1,6 @@
 import React from 'react'
-
+import { Form } from 'react-router-dom';
 const contact = () => {
-  return (
     const contact = {
         first: "Your",
         last: "Name",
