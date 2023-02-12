@@ -69,7 +69,7 @@ const contact = () => {
       );
 }
 
-function Favorite({ contact }) {
+const Favorite = ({ contact }) => {
     // yes, this is a `let` for later
     let favorite = contact.favorite;
     return (
