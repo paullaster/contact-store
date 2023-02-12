@@ -15,7 +15,7 @@ export const action = async () =>{
 
 }
 export const loader = async({request}) =>{
-  const url = new URL(request.url)
+  const url = new URL(request.url);
   const contacts = await getContacts();
   return { contacts}
 }
