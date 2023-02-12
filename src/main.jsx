@@ -18,6 +18,7 @@ import EditContact, {
   loader as editContactLoader,
 } from './routes/editContact'
 import {action as destroyContactAction} from './routes/deleteContact'
+import Index from './routes'
 
 const router = createBrowserRouter([
   {
