@@ -56,6 +56,7 @@ export default function Contact() {
           </Form>
           <Form
             method="post"
+            action="destroy"
             onSubmit={(event) => {
               if (
                 !confirm(
