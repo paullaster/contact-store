@@ -2,6 +2,10 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import { getContacts} from '../Contact'
 
+export const loarder = async() =>{
+
+}
+
 const root = () => {
   return (
           <>
