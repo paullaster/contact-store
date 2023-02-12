@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link, Outlet, useLoaderData } from 'react-router-dom'
-import { getContacts} from '../Contact'
+import { getContacts, createContact} from '../Contact'
 
+export const action = async () =>{
+  
+}
 export const loader = async() =>{
   const contacts = await getContacts();
   return { contacts}
