@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Link, Outlet, useLoaderData } from 'react-router-dom'
+import { Form, Link, Outlet, redirect, useLoaderData } from 'react-router-dom'
 import { getContacts, createContact} from '../Contact'
 
 export const action = async () =>{
