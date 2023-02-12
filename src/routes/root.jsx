@@ -43,7 +43,9 @@ const root = () => {
                       {
                         contacts.map ((contact) => {
                           return(
-                            <li key={contact.id}></li>
+                            <li key={contact.id}>
+                              <Link to={`contacts/${contact.id}`}></Link>
+                            </li>
                           )
                         })
                       }
