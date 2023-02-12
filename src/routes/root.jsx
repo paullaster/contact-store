@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet, useLoaderData } from 'react-router-dom'
+import { Form, Link, Outlet, useLoaderData } from 'react-router-dom'
 import { getContacts, createContact} from '../Contact'
 
 export const action = async () =>{
@@ -36,9 +36,9 @@ const root = () => {
                     aria-live="polite"
                   ></div>
                 </form>
-                <form method="post">
+                <Form method="post">
                   <button type="submit">New</button>
-                </form>
+                </Form>
               </div>
               <nav>
                 {
