@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Link, Outlet, redirect, useLoaderData } from 'react-router-dom'
+import { Form, Link, NavLink, Outlet, redirect, useLoaderData } from 'react-router-dom'
 import { getContacts, createContact} from '../Contact'
 
 export const action = async () =>{
@@ -49,7 +49,14 @@ const root = () => {
                         contacts.map ((contact) => {
                           return(
                             <li key={contact.id}>
-                              <Link to={`contacts/${contact.id}`}>
+                              <NavLink
+                               to={`contacts/${contact.id}`}
+                               className={
+                                ({active, isPending}) => {
+                                  return active ? 'active' : isPending ? 'pending' : '';
+                                }
+                               }
+                               >
                                 {
                                   contact.first || contact.last ? (
                                     <>
@@ -60,7 +67,7 @@ const root = () => {
                                   )
                                 }{" "}
                                 {contact.favorite && <span>★</span>}
-                              </Link>
+                              </NavLink>
                             </li>
                           )
                         })
