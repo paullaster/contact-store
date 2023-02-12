@@ -1,5 +1,8 @@
 import { Form } from "react-router-dom";
 import { getContact} from "../Contact"
+
+export 
+
 export default function Contact() {
   const contact = {
     first: "Your",
