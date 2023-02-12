@@ -3,7 +3,7 @@ import React from 'react'
 const index = () => {
   return (
     <p id="zero-state">
-    This is a demo for React Router.
+    Individual contact will appear here.
     <br />
     Check out{" "}
     <a href="https://reactrouter.com">
