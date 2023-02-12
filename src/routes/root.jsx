@@ -53,7 +53,7 @@ const root = () => {
                                to={`contacts/${contact.id}`}
                                className={
                                 ({isActive, isPending}) => {
-                                  return active ? 'active' : isPending ? 'pending' : '';
+                                  return isActive ? 'active' : isPending ? 'pending' : '';
                                 }
                                }
                                >
