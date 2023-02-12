@@ -3,7 +3,7 @@ import { getContact} from "../Contact"
 
 export const loader = async () => {
     const contact = await getContact();
-    
+    return { contact}
 }
 
 export default function Contact() {
