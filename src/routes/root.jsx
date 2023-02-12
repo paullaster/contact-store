@@ -4,7 +4,7 @@ import { getContacts, createContact} from '../Contact'
 
 export const action = async () =>{
   const contact = await createContact();
-  return redirect(`/contact/${contact.id}/edit`);
+  return redirect(`/contacts/${contact.id}/edit`);
 
 }
 export const loader = async() =>{
