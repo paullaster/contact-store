@@ -37,7 +37,17 @@ const root = () => {
                 </form>
               </div>
               <nav>
-                
+                {
+                  contacts.length ? (
+                    <ul>
+                      {
+
+                      }
+                    </ul>
+                  ):(
+
+                  )
+                }
               </nav>
             </div>
             <div id="detail">
