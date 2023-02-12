@@ -4,6 +4,7 @@ import { getContacts, createContact} from '../Contact'
 
 export const action = async () =>{
   const contact = createContact();
+  return { contact}
 }
 export const loader = async() =>{
   const contacts = await getContacts();
