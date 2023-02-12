@@ -62,7 +62,9 @@ const root = () => {
                       }
                     </ul>
                   ):(
-
+                    <p>
+                      <i>No contacts</i>
+                    </p>
                   )
                 }
               </nav>
