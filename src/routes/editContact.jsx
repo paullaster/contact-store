@@ -14,7 +14,7 @@ export const loader = async ({params}) => {
 
 export default function EditContact() {
   const contact = useLoaderData();
-
+  const 
   return (
     <Form method="post" id="contact-form">
       <p>
@@ -63,7 +63,14 @@ export default function EditContact() {
       </label>
       <p>
         <button type="submit">Save</button>
-        <button type="button">Cancel</button>
+        <button 
+        type="button"
+        onClick={
+          () => {
+
+          }
+        }
+        >Cancel</button>
       </p>
     </Form>
   );
