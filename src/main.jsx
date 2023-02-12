@@ -14,6 +14,7 @@ import Contact, {
   loader as contactLoader,
 } from './routes/contact'
 import EditContact, {
+  action as editContactAction,
   loader as editContactLoader,
 } from './routes/editContact'
 
