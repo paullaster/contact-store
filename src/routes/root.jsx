@@ -92,7 +92,7 @@ const root = () => {
             <div 
             id="detail"
             className={
-
+              navigation.state === "loading" ? "loading" : ""
             }
             >
               <Outlet/>
