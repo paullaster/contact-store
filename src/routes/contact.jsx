@@ -2,7 +2,7 @@ import { Form } from "react-router-dom";
 import { getContact} from "../Contact"
 
 export const loader = async ({param}) => {
-    return getContact();
+    return getContact(param.contactId);
 }
 
 export default function Contact() {
