@@ -52,7 +52,7 @@ const root = () => {
                               <NavLink
                                to={`contacts/${contact.id}`}
                                className={
-                                ({active, isPending}) => {
+                                ({isActive, isPending}) => {
                                   return active ? 'active' : isPending ? 'pending' : '';
                                 }
                                }
