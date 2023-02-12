@@ -7,6 +7,7 @@ import {
       } from 'react-router-dom'
 import Root from './routes/root'
 import ErrorPage from './errorPage'
+import contact from './routes/contact'
 
 const router = createBrowserRouter([
   {
