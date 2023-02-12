@@ -1,12 +1,14 @@
 import { Form } from "react-router-dom";
 import { getContact} from "../Contact"
 
-export const loader = async () => {
-    const contact = await getContact();
-    return { contact}
+export const loader = async ({param}) => {
+    return getContact();
 }
 
 export default function Contact() {
+  
+
+
   const contact = {
     first: "Your",
     last: "Name",
