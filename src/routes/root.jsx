@@ -53,7 +53,8 @@ const root = () => {
                                   ):(
                                     <i>No name</i>
                                   )
-                                }
+                                }{" "}
+                                {contact.favorite && <span>★</span>}
                               </Link>
                             </li>
                           )
