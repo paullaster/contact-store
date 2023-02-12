@@ -10,7 +10,9 @@ import Root, {
   loader as rootLoader
 } from './routes/root'
 import ErrorPage from './errorPage'
-import Contact from './routes/contact'
+import Contact, {
+  loader as contactLoader,
+} from './routes/contact'
 
 const router = createBrowserRouter([
   {
