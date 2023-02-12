@@ -50,6 +50,8 @@ const root = () => {
                                     <>
                                       {contact.first || contact.last}
                                     </>
+                                  ):(
+                                    <i>No name</i>
                                   )
                                 }
                               </Link>
