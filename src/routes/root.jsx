@@ -3,7 +3,8 @@ import { Link, Outlet } from 'react-router-dom'
 import { getContacts} from '../Contact'
 
 export const loarder = async() =>{
-
+  const contacts = await getContacts();
+  return { contacts}
 }
 
 const root = () => {
