@@ -13,7 +13,9 @@ import ErrorPage from './errorPage'
 import Contact, {
   loader as contactLoader,
 } from './routes/contact'
-import EditContact from './routes/editContact'
+import EditContact, {
+  loader as editContactLoader,
+} from './routes/editContact'
 
 const router = createBrowserRouter([
   {
