@@ -67,7 +67,7 @@ export default function EditContact() {
         type="button"
         onClick={
           () => {
-
+            navigate(-1);
           }
         }
         >Cancel</button>
