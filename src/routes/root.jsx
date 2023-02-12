@@ -41,7 +41,11 @@ const root = () => {
                   contacts.length ? (
                     <ul>
                       {
-
+                        contacts.map ((contact) => {
+                          return(
+                            <li key={contact.id}></li>
+                          )
+                        })
                       }
                     </ul>
                   ):(
