@@ -17,7 +17,7 @@ export const action = async () =>{
 export const loader = async({request}) =>{
   const url = new URL(request.url);
   const q = url.searchParams.get("q");
-  const contacts = await getContacts();
+  const contacts = await getContacts(q);
   return { contacts}
 }
 
