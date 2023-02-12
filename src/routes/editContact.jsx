@@ -1,4 +1,5 @@
 import { Form, useLoaderData } from "react-router-dom";
+import { getContact } from "../Contact";
 
 export default function EditContact() {
   const contact = useLoaderData();
