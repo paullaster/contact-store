@@ -1,8 +1,8 @@
 import { Form, useLoaderData } from "react-router-dom";
 import { getContact } from "../Contact";
 
-export const action = async () => {
-  
+export const action = async ({request, params}) => {
+
 }
 
 export const loader = async ({params}) => {
