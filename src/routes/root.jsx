@@ -14,7 +14,7 @@ export const action = async () =>{
   return redirect(`/contacts/${contact.id}/edit`);
 
 }
-export const loader = async() =>{
+export const loader = async({request}) =>{
   const contacts = await getContacts();
   return { contacts}
 }
