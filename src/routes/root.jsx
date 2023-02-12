@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet, userLoaderData } from 'react-router-dom'
+import { Link, Outlet, useLoaderData } from 'react-router-dom'
 import { getContacts} from '../Contact'
 
 export const loarder = async() =>{
@@ -8,7 +8,7 @@ export const loarder = async() =>{
 }
 
 const root = () => {
-  const { contacts} = userLoaderData();
+  const { contacts} = useLoaderData();
   return (
           <>
             <div id="sidebar">
