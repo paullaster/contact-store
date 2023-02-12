@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import { getContacts} from '../Contact'
 
 const root = () => {
   return (
