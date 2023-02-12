@@ -4,7 +4,8 @@ import {
    NavLink, 
    Outlet, 
    redirect, 
-   useLoaderData
+   useLoaderData,
+   useNavigation
    } from 'react-router-dom'
 import { getContacts, createContact} from '../Contact'
 
@@ -20,6 +21,7 @@ export const loader = async() =>{
 
 const root = () => {
   const { contacts} = useLoaderData();
+  const navigation = useNavigation ();
   return (
           <>
             <div id="sidebar">
@@ -90,7 +92,7 @@ const root = () => {
             <div 
             id="detail"
             className={
-              
+
             }
             >
               <Outlet/>
