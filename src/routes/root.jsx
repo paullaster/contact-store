@@ -38,7 +38,12 @@ const root = () => {
                     type="search"
                     name="q"
                     defaultValue={q}
-                    // ref={query}
+                    value={query}
+                    onChange={
+                      (e) => {
+                        setQuery(e.target.value)
+                      }
+                    }
                   />
                   <div
                     id="search-spinner"
