@@ -46,7 +46,8 @@ const root = () => {
                     value={query}
                     onChange={
                       (e) => {
-                        setQuery(e.target.value)
+                        setQuery(e.target.value);
+                        submit(e.currentTarget.form);
                       }
                     }
                   />
