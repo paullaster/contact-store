@@ -42,6 +42,9 @@ const root = () => {
                 <Form id="search-form" role="search">
                   <input
                     id="q"
+                    className={
+                      searching ? "loading": ""
+                    }
                     aria-label="Search contacts"
                     placeholder="Search"
                     type="search"
