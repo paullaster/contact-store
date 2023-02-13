@@ -24,7 +24,7 @@ export const loader = async({request}) =>{
 const root = () => {
   const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
-  const [query, setQuery] = useState();
+  const [query, setQuery] = useState("");
   useEffect ( () => {
     setQuery(q);
   }, [q])
@@ -40,7 +40,7 @@ const root = () => {
                     placeholder="Search"
                     type="search"
                     name="q"
-                    defaultValue={q}
+                    //defaultValue={q}
                     value={query}
                     onChange={
                       (e) => {
