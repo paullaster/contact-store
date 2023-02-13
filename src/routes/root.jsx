@@ -29,7 +29,7 @@ const root = () => {
   const searching = 
   navigation.location &&
   new URLSearchParams(navigation.location.search).has('q')
-  
+
   const [query, setQuery] = useState(q);
   useEffect ( () => {
     setQuery(q);
@@ -58,7 +58,7 @@ const root = () => {
                   <div
                     id="search-spinner"
                     aria-hidden
-                    hidden={true}
+                    hidden={!searching}
                   />
                   <div
                     className="sr-only"
