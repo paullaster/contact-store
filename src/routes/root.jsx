@@ -24,7 +24,7 @@ export const loader = async({request}) =>{
 const root = () => {
   const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(q);
   useEffect ( () => {
     setQuery(q);
   }, [q])
