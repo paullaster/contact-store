@@ -5,7 +5,8 @@ import {
    Outlet, 
    redirect, 
    useLoaderData,
-   useNavigation
+   useNavigation,
+   useSubmit
    } from 'react-router-dom'
 import { getContacts, createContact} from '../Contact'
 
@@ -24,6 +25,7 @@ export const loader = async({request}) =>{
 const root = () => {
   const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
+  const submit = useSubmit();
   const [query, setQuery] = useState(q);
   useEffect ( () => {
     setQuery(q);
