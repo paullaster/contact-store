@@ -40,7 +40,7 @@ const root = () => {
                     placeholder="Search"
                     type="search"
                     name="q"
-                    //defaultValue={q}
+                    defaultValue={q}
                     value={query}
                     onChange={
                       (e) => {
