@@ -25,7 +25,9 @@ const root = () => {
   const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
   const [query, setQuery] = useState();
-  
+  useEffect ( () => {
+    setQuery(q);
+  }, [query])
   return (
           <>
             <div id="sidebar">
