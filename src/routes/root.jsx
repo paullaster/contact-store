@@ -54,7 +54,10 @@ const root = () => {
                     onChange={
                       (e) => {
                         setQuery(e.target.value);
-                        submit(e.currentTarget.form);
+                        const isFirstSearch = q == null
+                        submit(e.currentTarget.form, {
+                          replace: !isFirstSearch
+                        });
                       }
                     }
                   />
