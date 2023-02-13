@@ -38,6 +38,7 @@ const root = () => {
                     type="search"
                     name="q"
                     defaultValue={q}
+                    ref={query}
                   />
                   <div
                     id="search-spinner"
