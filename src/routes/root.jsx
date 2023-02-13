@@ -24,10 +24,10 @@ export const loader = async({request}) =>{
 const root = () => {
   const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
-  const query = useRef("");
-  useEffect ( () => {
+  //const query = useRef("");
+  // useEffect ( () => {
 
-  }, [query])
+  // }, [query]);
   return (
           <>
             <div id="sidebar">
@@ -41,7 +41,7 @@ const root = () => {
                     type="search"
                     name="q"
                     defaultValue={q}
-                    ref={query}
+                    // ref={query}
                   />
                   <div
                     id="search-spinner"
