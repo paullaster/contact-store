@@ -25,6 +25,7 @@ const root = () => {
   const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
   const [query, setQuery] = useState();
+  
   return (
           <>
             <div id="sidebar">
