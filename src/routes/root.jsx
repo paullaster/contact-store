@@ -27,7 +27,7 @@ const root = () => {
   const [query, setQuery] = useState();
   useEffect ( () => {
     setQuery(q);
-  }, [query])
+  }, [q])
   return (
           <>
             <div id="sidebar">
