@@ -18,11 +18,11 @@ export const loader = async({request}) =>{
   const url = new URL(request.url);
   const q = url.searchParams.get("q");
   const contacts = await getContacts(q);
-  return { contacts}
+  return { contacts, q}
 }
 
 const root = () => {
-  const { contacts} = useLoaderData();
+  const { contacts, q} = useLoaderData();
   const navigation = useNavigation ();
   return (
           <>
@@ -36,6 +36,7 @@ const root = () => {
                     placeholder="Search"
                     type="search"
                     name="q"
+                    defaultValue={q}
                   />
                   <div
                     id="search-spinner"
