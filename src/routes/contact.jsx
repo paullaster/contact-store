@@ -9,7 +9,7 @@ export const action = async ({request, params}) =>{
 }
 
 export const loader = async ({params}) => {
-    return getContact(params.contactId);
+    const contact = getContact(params.contactId);
 }
 
 export default function Contact() {
