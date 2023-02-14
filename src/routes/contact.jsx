@@ -10,6 +10,13 @@ export const action = async ({request, params}) =>{
 
 export const loader = async ({params}) => {
     const contact = getContact(params.contactId);
+    if(!contact){
+      throw new Response("", {
+        status: 404,
+        statusText: "Contact not found"
+      })
+    }
+    return contact;
 }
 
 export default function Contact() {
