@@ -12,6 +12,7 @@ import Root, {
 import ErrorPage from './errorPage'
 import Contact, {
   loader as contactLoader,
+  action as contactAction
 } from './routes/contact'
 import EditContact, {
   action as editContactAction,
