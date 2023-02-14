@@ -4,7 +4,7 @@ import { getContact, updateContact} from "../Contact"
 export const action = async ({request, params}) =>{
   const formData = await request.formData();
   return updateContact(params.contactId, {
-    favourite: formData.favourite === 'true'
+    favorite: formData.get('favorite') === 'true'
   })
 }
 
