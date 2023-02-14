@@ -2,7 +2,10 @@ import { Form, useFetcher, useLoaderData } from "react-router-dom";
 import { getContact, updateContact} from "../Contact"
 
 export const action = async ({request, params}) =>{
-  
+  const formData = await request.formData();
+  return updateContact(params.contactId, {
+    favourite: formData.favourite === 'true'
+  })
 }
 
 export const loader = async ({params}) => {
